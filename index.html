@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>중공필터</title>
+    <script>
+      function analyze() {
+        const text = document.getElementById("comment").value.toLowerCase();
+        let score = 0;
+        if (text.includes("미국의 개") || text.includes("식민지") || text.includes("굴욕")) score += 30;
+        if (!text.includes("중국") && (text.match(/미국|한국|윤석열/g) || []).length > 2) score += 30;
+        if (text.includes("토나와") || text.includes("후진국")) score += 20;
+        if (text.includes("이 나라는 망했다") || text.includes("답이 없다")) score += 20;
+        document.getElementById("result").innerText = `위험 지수: ${score} / 100`;
+      }
+    </script>
+  </head>
+  <body style="font-family:sans-serif; max-width:600px; margin:auto; padding:20px;">
+    <h1>중공필터 🧠</h1>
+    <p>댓글을 입력하면 여론조작 가능성을 분석합니다.</p>
+    <textarea id="comment" rows="6" style="width:100%;"></textarea>
+    <br /><br />
+    <button onclick="analyze()">분석하기</button>
+    <p id="result" style="font-weight:bold; font-size:18px;"></p>
+  </body>
+</html>
