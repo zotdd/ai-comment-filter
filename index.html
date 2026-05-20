@@ -1,26 +1,31 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>중공필터</title>
-    <script>
-      function analyze() {
-        const text = document.getElementById("comment").value.toLowerCase();
-        let score = 0;
-        if (text.includes("미국의 개") || text.includes("식민지") || text.includes("굴욕")) score += 30;
-        if (!text.includes("중국") && (text.match(/미국|한국|윤석열/g) || []).length > 2) score += 30;
-        if (text.includes("토나와") || text.includes("후진국")) score += 20;
-        if (text.includes("이 나라는 망했다") || text.includes("답이 없다")) score += 20;
-        document.getElementById("result").innerText = `위험 지수: ${score} / 100`;
-      }
-    </script>
-  </head>
-  <body style="font-family:sans-serif; max-width:600px; margin:auto; padding:20px;">
-    <h1>중공필터 🧠</h1>
-    <p>댓글을 입력하면 여론조작 가능성을 분석합니다.</p>
-    <textarea id="comment" rows="6" style="width:100%;"></textarea>
-    <br /><br />
-    <button onclick="analyze()">분석하기</button>
-    <p id="result" style="font-weight:bold; font-size:18px;"></p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free AI Background Remover - Instant & Easy</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f4f4f9; text-align: center; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { color: #333; }
+        .ad-space { background: #eee; padding: 20px; margin: 20px 0; border: 1px dashed #ccc; font-weight: bold; color: #666; }
+        iframe { width: 100%; height: 700px; border: none; border-radius: 8px; }
+        .community-link { display: inline-block; margin-top: 20px; padding: 15px 30px; background: #5865F2; color: white; text-decoration: none; font-weight: bold; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Instant AI Background Remover (100% Free)</h1>
+        
+        <div class="ad-space">Google Adsense Area (Top)</div>
+
+        <iframe src="https://briaai-bria-rmbg-1-4.hf.space"></iframe>
+
+        <div class="ad-space">Google Adsense Area (Bottom)</div>
+
+        <a href="https://discord.gg/your-link" class="community-link" target="_blank">👉 Join Our Secret AI Prompt Community (Discord)</a>
+    </div>
+
+</body>
 </html>
